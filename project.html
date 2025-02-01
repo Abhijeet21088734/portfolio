@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Abhijeet Kumar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height */
+            overflow: hidden;
+        }
+
+        .projects-container {
+            width: 100%; /* 1/3 of the screen */
+            height: 70%; /* Adjust height to fit content */
+            /* background-color: #181818; */
+            background-color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .projects-container h2 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 15px;
+            height: 100%; /* Fill the available space */
+        }
+
+        .project-box {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .project-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .project-box h3 {
+            color: #ff6f61;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .project-box p {
+            color: #aaa;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .project-box a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .projects-container {
+                width: 90%; /* Full width for smaller screens */
+                height: auto; /* Adjust height */
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr 1fr; /* Retain two columns */
+            }
+
+            .project-box {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Abhijeet<span>Kumar</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="aboutus.html">About us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skill</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="project.html">MY Project</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="skill.html">Skill</a>
+                <a href="project.html">MY Project</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="PHOTO.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="projects-container">
+                    <h2>My Projects</h2>
+                    <div class="projects-grid">
+                        <!-- Project Box 1 -->
+                        <div class="project-box">
+                            <h3>Project 1</h3>
+                            <p>Short description of Project 1.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <!-- Project Box 2 -->
+                        <div class="project-box">
+                            <h3>Project 2</h3>
+                            <p>Short description of Project 2.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <div class="project-box">
+                            <h3>Project 2</h3>
+                            <p>Short description of Project 2.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <div class="project-box">
+                            <h3>Project 2</h3>
+                            <p>Short description of Project 2.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <!-- Project Box 3 -->
+                        <div class="project-box">
+                            <h3>Project 3</h3>
+                            <p>Short description of Project 3.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <!-- Project Box 4 -->
+                        <div class="project-box">
+                            <h3>Project 4</h3>
+                            <p>Short description of Project 4.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <!-- Project Box 5 -->
+                        <div class="project-box">
+                            <h3>Project 5</h3>
+                            <p>Short description of Project 5.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                        <!-- Project Box 6 -->
+                        <div class="project-box">
+                            <h3>Project 6</h3>
+                            <p>Short description of Project 6.</p>
+                            <a href="#" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
